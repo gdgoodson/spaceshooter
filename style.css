@@ -1,0 +1,135 @@
+/*
+colors:
+purple: #A200FF
+green: #5DFF00
+dark gray: #2F3030
+
+sprites designed on https://make8bitart.com/
+*/
+
+body {
+  background-color: #2F3030;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  border: 10px solid #A200FF;
+  border-radius: 1em;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+  border-color: black;
+}
+
+.star {
+  height: 2px;
+  width: 2px;
+  background-color: white;
+}
+
+.player-ship {
+}
+
+.player-laser {
+  background-image: url("images/laser.png");
+  background-size: cover;
+}
+
+.enemy-ship {
+  background-image: url("images/meteorite.png");
+  background-size: cover;
+}
+
+.hit {
+  background-image: url("images/explosion.png");
+  background-size: cover;
+}
+
+.ground {
+  background-image: url("images/ground.png");
+  background-size: cover;
+}
+
+.turrent {
+  background-image: url("images/turrent.png");
+  background-size: cover;
+}
+
+.engine {
+  background-image: url("images/engine.png");
+  background-size: cover;
+}
+
+.cockpit {
+  background-image: url("images/cockpit02.png");
+  background-size: cover;
+}
+
+.left-wheel {
+  background-image: url("images/wheelLeft.png");
+  background-size: cover;
+}
+
+.right-wheel {
+  background-image: url("images/wheelRight01.png");
+  background-size: cover;
+}
+
+#score-box {
+  background-color: black;
+  margin-left: 50px;
+  color: #5DFF00;
+  font-family: sans-serif;
+  border: 5px solid #A200FF;
+  border-radius: 1em;
+  width: 120px;
+  height: 350px;
+  padding: 1em;
+}
+
+.buttons {
+  vertical-align: middle;
+  height: 35px;
+  width: 100%;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #A200FF;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#controls {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.control {
+  margin: 1em;
+  padding: 10px 30px 10px 30px;
+  vertical-align: middle;
+  height: 35px;
+  width: 100%;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #A200FF;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
